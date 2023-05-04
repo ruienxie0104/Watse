@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Login & signup</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h2 class="logo">! Waste</h2>
+      <nav class="nav">
+        <a href="#">首頁</a>
+        <a href="#">優惠專區</a>
+        <a href="#">會員專區</a>
+        <a href="#">! 幣</a>
+        <button class="btnLogin">登入</button>
+      </nav>
+    </header>
+
+    <div class="wrapper">
+      <span class="icon-close">
+        <ion-icon name="close-circle"></ion-icon>
+      </span>
+
+      <div class="form-box login">
+        <h2>登入</h2>
+        <form action="#">
+          <div class="input-box">
+            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+            <input type="email" required />
+            <label>Email</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+            <input type="password" required />
+            <label>密碼</label>
+          </div>
+          <div class="remeber-forgot">
+            <label><input type="checkbox" />記住我</label>
+            <a href="#">忘記密碼</a>
+          </div>
+          <button type="submit" class="btn">登入</button>
+          <div class="login-register"></div>
+          <p>還沒有帳號?<a href="#" class="signup-link">註冊帳號</a></p>
+        </form>
+      </div>
+
+      <div class="form-box signup">
+        <h2>註冊</h2>
+        <form action="#">
+          <div class="input-box">
+            <span class="icon"><ion-icon name="person"></ion-icon></span>
+            <input type="text" required />
+            <label>使用者名稱</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+            <input type="email" required />
+            <label>Email</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+            <input type="password" required />
+            <label>密碼</label>
+          </div>
+          <div class="remeber-forgot">
+            <label
+              ><input type="checkbox" />同意客戶隱私權政策&客戶服務條款</label
+            >
+          </div>
+          <button type="submit" class="btn">註冊</button>
+          <div class="login-register"></div>
+          <p>已經有帳號?<a href="#" class="login-link">登入帳號</a></p>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <p>this is test</p>
+  </body>
+</html>
